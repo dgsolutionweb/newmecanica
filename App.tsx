@@ -120,7 +120,7 @@ function App() {
         <main id="home" className="mt-8 lg:mt-12">
 
           {/* Car Image Area */}
-          <div className="relative w-full aspect-[16/9] md:aspect-[21/9] lg:aspect-[2.5/1] bg-gradient-to-b from-deluxe-gray/30 to-deluxe-black rounded-3xl overflow-hidden mb-16 group shadow-2xl shadow-blue-900/10">
+          <div className="relative w-full aspect-[4/5] sm:aspect-[16/9] md:aspect-[21/9] lg:aspect-[2.5/1] bg-gradient-to-b from-deluxe-gray/30 to-deluxe-black rounded-3xl overflow-hidden mb-16 group shadow-2xl shadow-blue-900/10">
             <div className="absolute inset-0 bg-[url('/hero.jpeg')] bg-cover bg-center opacity-80 group-hover:scale-105 transition-transform duration-700 ease-out"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-deluxe-black via-transparent to-transparent"></div>
 
@@ -133,20 +133,20 @@ function App() {
             </div>
 
             {/* Hero Content Overlay */}
-            <div className="absolute bottom-0 left-0 p-8 md:p-16 w-full md:w-2/3">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-black leading-none tracking-tighter mb-6 text-white drop-shadow-2xl">
+            <div className="absolute bottom-0 left-0 p-6 md:p-16 w-full md:w-2/3">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-black leading-none tracking-tighter mb-4 md:mb-6 text-white drop-shadow-2xl">
                 EXCELÊNCIA<br />AUTOMOTIVA
               </h1>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
                 <button
                   onClick={() => setIsBookingOpen(true)}
-                  className="bg-deluxe-orange hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold tracking-wide transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-deluxe-orange/20"
+                  className="bg-deluxe-orange hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold tracking-wide transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg shadow-deluxe-orange/20 text-sm md:text-base"
                 >
                   AGENDAR SERVIÇO <ArrowRight size={18} />
                 </button>
                 <button
                   onClick={() => scrollToSection('#services')}
-                  className="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-8 py-4 rounded-full font-bold tracking-wide transition-all border border-white/20 flex items-center justify-center"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold tracking-wide transition-all border border-white/20 flex items-center justify-center text-sm md:text-base"
                 >
                   CONHECER SERVIÇOS
                 </button>
@@ -155,14 +155,14 @@ function App() {
           </div>
 
           {/* Services Section */}
-          <div id="services" className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-20 pt-10">
+          <div id="services" className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 lg:pb-20 pt-6 lg:pt-10">
 
             {/* Left Column: Title */}
             <div className="lg:col-span-5 flex flex-col justify-center">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-black leading-none tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-500">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-display font-black leading-none tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-500">
                 NOSSOS<br />SERVIÇOS
               </h2>
-              <p className="text-gray-400 text-lg max-w-md">
+              <p className="text-gray-400 text-base md:text-lg max-w-md">
                 Oferecemos uma gama completa de serviços para manter seu veículo em perfeito estado. Tecnologia de ponta e profissionais qualificados.
               </p>
             </div>
